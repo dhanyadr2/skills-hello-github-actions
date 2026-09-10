@@ -1,0 +1,11 @@
+name: Multi-step
+on: push
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: echo "Repo checked out"
+      - run: ls -la
+      - name: Show date
+        run: date
